@@ -7,7 +7,7 @@ services:
 
 env:
   global:
-    - COMMIT=${TRAVIS_COMMIT::8}
+    - COMMIT=${TRAVIS_COMMIT::7}
 
 after_success:
   - docker login -u $DOCKER_USER -p $DOCKER_PASS
